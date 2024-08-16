@@ -1,3 +1,4 @@
+//Random computer choice
 function computer_random() {
     return Math.floor(Math.random() * 3) + 1;
 }
@@ -46,5 +47,13 @@ function choice_number(human_choice){
 
 const entered_choice = human_choice();
 console.log(choice_number(entered_choice));
+
+
+//declareing score variable
+
+let score_h = 0;
+let score_c = 0;
+
+
 
 
