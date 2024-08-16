@@ -19,6 +19,32 @@ console.log(computer_choice(random_choice));
 
 
 //Get human choice
+function human_choice(){
+    let choice = prompt ("Enter the choice");
+    return choice.toLowerCase();
+}
 
+function choice_number(human_choice){
+    switch(human_choice){
+        case("rock"):
+        return 1;
+        break;
+
+        case("paper"):
+        return 2;
+        break;
+
+        case("scissors"):
+        return 3;
+        break;
+
+        default:
+        return -1;
+        break
+    }
+}
+
+const entered_choice = human_choice();
+console.log(choice_number(entered_choice));
 
 
