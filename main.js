@@ -49,8 +49,7 @@ function choice_number(human_choice){
 
 //declareing score variable
 
-let score_h = 0;
-let score_c = 0;
+
 
 //logic to play single round
 
@@ -58,30 +57,28 @@ function update_score(human,computer){
     if(human == computer){
         alert("Its a Draw");
     }
-    else if((human ==  1 && computer == 2) || human == 2  && computer == 3 || human == 1 && computer == 3 )
+    else if((human ==  1 && computer == 2) || human == 2  && computer == 3 || human == 3 && computer == 1 )
     {
         alert ("Compter Won");
         score_c ++;
     }
-    else if ((human ==  2 && computer == 1) || human == 3  && computer == 2 || human == 3 && computer == 1)
+    else if ((human ==  2 && computer == 1) || human == 3  && computer == 2 || human == 1 && computer == 3)
     {
         alert ("Human Won");
         score_h ++;
     }
 }
 
-
 let score_h = 0;
 let score_c = 0;
 
-
-while(score_h < 5 || score_c < 5){
+while(score_h < 5 && score_c < 5){
     let entered_choice = human_choice();
-    choice_number(entered_choice);
+    result=choice_number(entered_choice);
 
     let random_choice = computer_random();
 
-    update_score(entered_choice,random_choice);
+    update_score(result,random_choice);
 
 }
 
