@@ -96,7 +96,3 @@ while (score_h < 5 && score_c < 5) {
 ## Conclusion
 
 This project is a fundamental exercise in JavaScript programming, demonstrating essential concepts such as random number generation, user input handling, and conditional logic. It serves as a solid foundation for more complex interactive applications.
-
----
-
-This `README.md` highlights your JavaScript skills and provides an overview of the code, while also suggesting potential improvements for future development.
